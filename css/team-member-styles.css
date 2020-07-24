@@ -1,0 +1,127 @@
+/*=================================================
+
+
+Styling for Team Member Plugin
+
+
+===================================================*/
+/*===============================
+
+  Universal Styling
+
+================================*/
+.bold-contact{
+    font-weight: 700;
+    font-family: Gentona_Bold;
+    text-transform: uppercase;
+    color: #666666 !important;
+}
+
+.team-member-image img {
+    width: 200px;
+    object-fit: cover;
+    max-height: 271px;
+    height: 200px;
+    border: 1px solid #CCCCCC;
+}
+
+.archive-team-member-position p {
+    font-style: italic;
+    padding-right: 10%;
+}
+
+.team-member-additional-info {
+    margin-top: 2rem;
+    border-top: 1px dashed #f45a1d;
+}
+
+.team-member-additional-info ul {
+    padding-left: 1rem;
+}
+
+/*===============================
+
+  Archive page for ALL team members
+
+================================*/
+
+.all-team-member-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.individual-team-member-container {
+    flex: 1 auto;
+    max-width: 250px;
+    margin: 0 1rem 3rem 0;
+}
+
+.archive-team-member-name {
+  margin: .4rem 0;
+}
+
+#content .archive-team-member-name a {
+    font-family: "Quadon", sans-serif !important;
+    margin: .5rem 0;
+}
+
+
+/*===============================
+
+Media Queries
+
+================================*/
+
+@media(min-width: 768px){
+  #content .team-member_wrap {
+      max-width: 1023px;
+      display: flex;
+  }
+
+  #content .archive-team-member_wrap.wrap {
+    max-width: 1023px;
+  }
+
+  .archive.post-type-archive-clas_team_members .wrap {
+    max-width: 1023px;
+  }
+
+  .team-member-main-info-container {
+      flex: 1 10%;
+      border-right: 1px dashed #f45a1d;
+      padding-right: 1rem;
+  }
+
+  .team-member-additional-info {
+    padding-left: 2rem;
+    flex: 1 50%;
+    margin-top: 0;
+    border: none;
+  }
+
+  .team-member-additional-info div:first-child h3 {
+    padding-top: 0;
+  }
+
+  .team-member-main-info-container > div {
+    padding: .2rem 0;
+  }
+
+  .team-member-main-info {
+    margin-bottom: 2rem;
+  }
+
+  .all-team-member-container {
+      justify-content: left;
+  }
+
+  .team-member-link {
+    margin: .5rem 0;
+  }
+
+  .team-member-additional-info ul {
+      padding-left: 40px;
+  }
+}
+
+@media (min-width: 1025px) {}
